@@ -1,0 +1,87 @@
+// app global css
+/* latin */
+@font-face {
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Quicksand Light'), local('Quicksand-Light'), url(https://fonts.gstatic.com/s/quicksand/v7/qhfoJiLu10kFjChCCTvGlBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+    font-family: 'Quicksand Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v7/sKd0EMYPAh5PYCRKSryvW5Bw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+    font-family: 'Quicksand Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Quicksand Medium'), local('Quicksand-Medium'), url(https://fonts.gstatic.com/s/quicksand/v7/FRGja7LlrG1Mypm0hCq0Dhampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+    font-family: 'Quicksand Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v7/32nyIRHyCu6iqEka_hbKshampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+body {
+    font-family: 'Quicksand Regular', Roboto, Noto, Helvetica, Arial, sans-serif;
+}
+html,
+body,
+#q-app {
+    color: #253238;
+}
+/* fixed ios problem when using keyboard */
+.is-ios-keyboard-show .q-header,
+.is-ios-keyboard-show .q-footer {
+    position: absolute !important;
+}
+.is-ios-keyboard-show .q-page-container {
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+.q-field--filled.q-field--focused .q-field__control:before {
+    opacity: 1;
+    background: rgba(31, 167, 100, 0.15);
+}
+.q-notification__message p,
+ul {
+    margin: 0;
+}
+.q-notification__message ul {
+    padding-left: 1em;
+}
+.text-white {
+    color: #ffffff;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+.bg-primary-gr {
+    background-image: linear-gradient(to bottom, #20a764 0%, #72afd3 100%);
+    // background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+.bg-gr-blue {
+    background: #508db1 !important;
+}
+.text-gr-blue {
+    color: #508db1 !important;
+}
+.bg-transparent {
+    background: transparent !important;
+}
+.version-chip {
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, .3) inset;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3) inset;
+    background: transparent;
+    color: #fff;
+}
